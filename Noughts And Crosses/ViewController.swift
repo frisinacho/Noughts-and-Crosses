@@ -19,8 +19,29 @@ class ViewController: UIViewController {
     var gameActive = true
     
     @IBOutlet var playAgainButton: UIButton!
-    
+
     @IBAction func playAgain(sender: AnyObject) {
+        
+        gameState = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+        
+        activePlayer = 1
+        
+        gameActive = true
+        
+        gameOverLabel.hidden = true
+        gameOverLabel.center = CGPointMake(gameOverLabel.center.x - 500, gameOverLabel.center.y)
+        
+        playAgainButton.hidden = true
+        playAgainButton.center = CGPointMake(playAgainButton.center.x - 500, playAgainButton.center.y)
+        
+        var buttonToClear : UIButton
+        
+        for i in 0 ..< 9 {
+            
+            buttonToClear = view.viewWithTag(i) as! UIButton
+            
+            buttonToClear.setImage(nil, forState: .Normal)
+        }
     }
     
     @IBOutlet var button: UIButton!

@@ -13,11 +13,11 @@
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" tag="10" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="board.png" translatesAutoresizingMaskIntoConstraints="NO" id="rcL-VO-Rwa">
+                            <imageView userInteractionEnabled="NO" tag="10" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="board.png" translatesAutoresizingMaskIntoConstraints="NO" id="rcL-VO-Rwa">
                                 <rect key="frame" x="0.0" y="146" width="375" height="375"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="375" id="ByD-pe-RYx"/>
@@ -153,19 +153,18 @@
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sZ2-sy-IAK"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qxd-Dt-vli">
+                            <label opaque="NO" userInteractionEnabled="NO" tag="10" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qxd-Dt-vli">
                                 <rect key="frame" x="20" y="284" width="335" height="100"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Au-RP-LZW">
-                                <rect key="frame" x="152" y="445" width="71" height="30"/>
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Npo-Fi-fZ5">
+                                <rect key="frame" x="152" y="446" width="71" height="30"/>
                                 <state key="normal" title="Play Again"/>
                                 <connections>
-                                    <action selector="playAgain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fsW-6V-Lqf"/>
-                                    <action selector="playAgainButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X3F-Dc-CcI"/>
+                                    <action selector="playAgain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hJF-7t-6Xf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -197,7 +196,7 @@
                     <connections>
                         <outlet property="button" destination="pZr-i2-Qee" id="nIe-4s-YdV"/>
                         <outlet property="gameOverLabel" destination="qxd-Dt-vli" id="s9f-ad-4iX"/>
-                        <outlet property="playAgainButton" destination="1Au-RP-LZW" id="P2b-kp-TZc"/>
+                        <outlet property="playAgainButton" destination="Npo-Fi-fZ5" id="QjR-iq-cts"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
