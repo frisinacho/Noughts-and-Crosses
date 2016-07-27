@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     
     @IBAction func buttonPressed(sender: AnyObject) {
         
-        button.setImage(UIImage(named: "cross.png"), forState: .Normal)
+        sender.setImage(UIImage(named: "cross.png"), forState: .Normal)
     }
 
     override func viewDidLoad() {
