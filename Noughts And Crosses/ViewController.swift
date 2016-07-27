@@ -9,6 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet var button: UIButton!
+    
+    @IBAction func buttonPressed(sender: AnyObject) {
+        
+        button.setImage(UIImage(named: "cross.png"), forState: .Normal)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
