@@ -40,7 +40,13 @@ class ViewController: UIViewController {
                 
                 if (gameState[combination[0]] != 0 && gameState[combination[0]] == gameState[combination[1]] && gameState[combination[1]] == gameState[combination[2]]) {
                     
-                    
+                    if gameState[combination[0]] == 1 {
+                        
+                        print("Noughts has won!")
+                    } else {
+                        
+                        print("Crosses has won!")
+                    }
                 }
             }
         }
