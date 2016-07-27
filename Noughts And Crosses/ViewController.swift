@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     
     @IBOutlet var button: UIButton!
     
+    @IBOutlet var gameOverLabel: UILabel!
+    
     @IBAction func buttonPressed(sender: AnyObject) {
         
         if (gameState[sender.tag] == 0) {
@@ -42,11 +44,20 @@ class ViewController: UIViewController {
                     
                     if gameState[combination[0]] == 1 {
                         
-                        print("Noughts has won!")
+                        gameOverLabel.text = "Noughts have won!"
+                        
+                        print("Noughts have won!")
                     } else {
                         
-                        print("Crosses has won!")
+                        gameOverLabel.text = "Crosses have won!"
+                        
+                        print("Crosses have won!")
                     }
+                    
+                    gameOverLabel.hidden = false
+                    UIView.animateWithDuration(0.5, animations: { () -> Void in
+                        self.gameOverLabel.center = CGPointMake(self.gameOverLabel.center.x + 500, self.gameOverLabel.center.y)
+                    })
                 }
             }
         }
@@ -55,6 +66,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        gameOverLabel.hidden = true
+        
+        gameOverLabel.center = CGPointMake(gameOverLabel.center.x - 500, gameOverLabel.center.y)
     }
 
     override func didReceiveMemoryWarning() {
