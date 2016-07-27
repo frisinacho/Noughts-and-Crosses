@@ -18,6 +18,11 @@ class ViewController: UIViewController {
     
     var gameActive = true
     
+    @IBOutlet var playAgainButton: UIButton!
+    
+    @IBAction func playAgain(sender: AnyObject) {
+    }
+    
     @IBOutlet var button: UIButton!
     
     @IBOutlet var gameOverLabel: UILabel!
