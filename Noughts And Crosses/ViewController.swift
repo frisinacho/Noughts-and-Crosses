@@ -75,13 +75,9 @@ class ViewController: UIViewController {
                     if gameState[combination[0]] == 1 {
                         
                         gameOverLabel.text = "Noughts have won!"
-                        
-                        print("Noughts have won!")
                     } else {
                         
                         gameOverLabel.text = "Crosses have won!"
-                        
-                        print("Crosses have won!")
                     }
                     
                     endGame()
@@ -103,8 +99,6 @@ class ViewController: UIViewController {
                 if gameActive == false {
                 
                     gameOverLabel.text = "It's a draw!"
-                    
-                    print("It's a draw!")
                 
                     endGame()
                 }
